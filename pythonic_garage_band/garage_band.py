@@ -1,0 +1,66 @@
+class Musician:
+    members = []
+    def __init__(self, name):
+        self.name=name
+        Musician.members.append(self.name)
+@classmethod
+def __str__(self):
+        pass
+def __repr__(self):
+        pass
+    
+def play_solo(self):
+        pass
+def get_instrument(self):
+        pass
+
+class Band(Musician):
+    def __init__(self, name,members):
+        self.name=name
+        self.members=members      
+    def play_solos(self):
+        solos_list=[]
+        for i in self.members:
+            solos_list.append(i.play_solo())
+        return solos_list
+    def __str__(self):
+        return f"We are {self.name} and we are music band"
+    def __repr__(self):
+        return f"Band instance. Name = {self.name}"
+    def to_list(self):
+        pass
+
+         
+    
+class Guitarist(Musician):
+    def __str__(self):
+        return f"My name is {self.name} and I play guitar"
+    def __repr__(self):
+        return f'Guitarist instance. Name = {self.name}'
+    
+    def play_solo(self):
+        return "face melting guitar solo"
+    def get_instrument(self):
+        return 'guitar'
+
+class Bassist(Musician):
+    def __str__(self):
+        return f"My name is {self.name} and I play bass"
+    def __repr__(self):
+        return f'Bassist instance. Name = {self.name}'
+   
+    def play_solo(self):
+        return "bom bom buh bom"
+    def get_instrument(self):
+        return 'bass'
+    
+
+class Drummer(Musician):
+    def __str__(self):
+        return f"My name is {self.name} and I play drums"
+    def __repr__(self):
+        return f'Drummer instance. Name = {self.name}'
+    def play_solo(self):
+        return "rattle boom crash"
+    def get_instrument(self):
+        return 'drums'
